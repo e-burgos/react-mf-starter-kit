@@ -4,13 +4,24 @@ React Microfrontend Starter Kit es un proyecto gratuito y de código abierto. El
 
 React Microfrontend Starter Kit is a free and open source project. It already has TailwindCSS built in for a better look. The project also incorporates different preconfigured libraries such as webpack, typescript and react query, ready to be used.
 
-## Instalacion de dependencias
-En la raíz de cada proyecto primero deber ejecutar el siguiente comando para instalar dependencias:
+## Instalación con npx
+Para instalar este proyecto en un solo paso puedes ejecutar el siguiente comando:
+```sh
+npx react-mf-starter <tu-proyecto>
+```
+
+## Instalación desde el repositorio
+Clonar el proyecto desde tu consola:
+```sh
+git clone https://github.com/e-burgos/react-mf-starter-kit.git
+```
+
+Luego de clonar el proyecto, en la raíz del mismo primero deber ejecutar el siguiente comando para instalar dependencias:
 ```sh
 npm install
 ```
-## Correr en modo local
-En la raíz del proyecto general ejecutar el siguiente comando
+
+Luego ejecuta el proyecto utilizando el siguiente comando:
 ```sh
 npm run start
 ```
@@ -23,7 +34,7 @@ Puedes utilizar variables de entorno en todo el proyecto, agrega el archivo .env
 
 En caso que necesites deployar tu app, Vercel es un muy buena alternativa, aqui te dejo algunos pasos de utilidad.
 
-1. Crear una cuenta en Vercel: https://vercel.com/
+1. Crear una cuenta en Vercel: https://vercel.com
 2. Crear un nuevo projecto.
 3. Enlazar los proyectos desde tu consola, para ello te recomiendo instalar globalmente Vercel CLI:
 

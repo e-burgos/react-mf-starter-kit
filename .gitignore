@@ -3,6 +3,11 @@
 # dependencies
 /node_modules
 
+# npx
+/bin
+README-NPX.md
+package-npx.json
+ 
 # testing
 /coverage
 
