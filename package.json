@@ -1,6 +1,7 @@
 {
-  "name": "react-mf-ts-tailwind-started-kit",
-  "version": "1.0.0",
+  "name": "react-mf-started-kit",
+  "version": "1.0.1",
+  "description": "React Microfrontend Starter Kit is a free and open source project. It already has TailwindCSS built in for a better look. The project also incorporates different preconfigured libraries such as webpack, typescript and react query, ready to be used.",
   "scripts": {
     "build": "webpack --mode production",
     "build:dev": "webpack --mode development",

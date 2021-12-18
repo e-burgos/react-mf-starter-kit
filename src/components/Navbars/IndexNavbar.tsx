@@ -51,7 +51,7 @@ export default function Navbar( {fixed }: Props) {
                   rel='noreferrer'
                 >
                   <i className="text-blueGray-400 far fa-file-alt text-lg leading-lg mr-2" />{" "}
-                  Repo Example
+                  MF Full Example
                 </a>
               </li>
             </ul>

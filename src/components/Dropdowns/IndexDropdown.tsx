@@ -26,7 +26,7 @@ const IndexDropdown = () => {
           e.preventDefault();
           dropdownPopoverShow ? closeDropdownPopover() : openDropdownPopover();
         }}>
-        Micro Pages
+        MF Pages
       </a>
       <div
         ref={popoverDropdownRef}
@@ -38,40 +38,34 @@ const IndexDropdown = () => {
           className={
             'text-sm pt-2 pb-0 px-4 font-bold block w-full whitespace-nowrap bg-transparent text-blueGray-400'
           }>
-          Admin Layout MFs
+          First Remote MF
         </span>
         <Link
-          to='/admin/dashboard'
+          to='/remote'
           className='text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700'>
-          Dashboard
+          One Page
         </Link>
         <Link
-          to='/admin/tables'
+          to='/remote/two-page'
           className='text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700'>
-          Tables
+          Two Page
         </Link>
-        <Link
-          to='/admin/otherpages'
-          className='text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700'>
-          Other MFs
-        </Link>
-
         <div className='h-0 mx-4 my-2 border border-solid border-blueGray-100' />
         <span
           className={
             'text-sm pt-2 pb-0 px-4 font-bold block w-full whitespace-nowrap bg-transparent text-blueGray-400'
           }>
-          No Layout MFs
+          Second Remote MF
         </span>
         <Link
-          to='/landing'
+          to='/remote-two'
           className='text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700'>
-          Landing
+          One Page
         </Link>
         <Link
-          to='/landing/company'
+          to='/remote-two/page-two'
           className='text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700'>
-          Company
+          Two Page
         </Link>
       </div>
     </>

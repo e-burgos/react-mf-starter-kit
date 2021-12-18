@@ -7,8 +7,14 @@ const deps = require("./package.json").dependencies;
 module.exports = (env) => {
 
   process.env.PRODUCTION = 'off';
-  process.env.REACT_APP_HOST_URL= process.env.PRODUCTION === 'on' ? 'https://current-production-project-url.com' : 'http://localhost:3000';
-  //process.env.REACT_APP_REMOTE_URL= process.env.PRODUCTION === 'on' ? 'https://mf-prduction-remote-url.com' : 'http://localhost:3001';
+
+  process.env.REACT_APP_HOST_URL= process.env.PRODUCTION === 'on' 
+    ? 'https://current-production-project-url.com' 
+    : 'http://localhost:3000';
+  
+  //process.env.REACT_APP_REMOTE_URL= process.env.PRODUCTION === 'on' 
+  //  ? 'https://mf-prduction-remote-url.com' 
+  //  : 'http://localhost:3001';
 
   console.log('Production: ', process.env.PRODUCTION);
   console.log('Host: ' + process.env.REACT_APP_HOST_URL);
@@ -58,6 +64,7 @@ module.exports = (env) => {
 
     plugins: [
       new Dotenv({
+        // .env path
         path: `.env${env.file ? `.${env.file}` : ''}`,
         allowEmptyValues: true,
       }),
